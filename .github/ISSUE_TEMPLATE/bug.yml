@@ -1,0 +1,25 @@
+name: Something is broken
+description: Report a problem. There is no promise of a fix, but I read every report.
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Software is provided as-is with no guarantee of support. Please don't post passwords, pay records, or other people's personal information.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which product?
+      options: [ClockRoute, CORE, Benchdrop, ChatScribe, Deskside Dial, Website]
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you click, what did you expect, and what happened instead?
+    validations: {required: true}
+  - type: input
+    id: env
+    attributes:
+      label: Device and version
+      description: For example "Windows 11, CORE 1.2" or "iPhone 15, iOS 19, installed PWA".
