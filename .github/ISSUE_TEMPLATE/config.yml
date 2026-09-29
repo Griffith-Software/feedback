@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: No GitHub account? Use the website form
+    url: https://griffith.software/feedback.html
+    about: Sends your message to me by email.
