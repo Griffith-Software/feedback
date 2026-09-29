@@ -1,0 +1,22 @@
+name: Feature idea
+description: Suggest something you'd like. There is no promise it will be built.
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thumbs-up on existing ideas helps me see what matters. Search open tickets first.
+  - type: dropdown
+    id: product
+    attributes:
+      label: Which product?
+      options: [ClockRoute, CORE, Benchdrop, ChatScribe, Deskside Dial, Website]
+    validations: {required: true}
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to do that you can't do now?
+    validations: {required: true}
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like it to do?
